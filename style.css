@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+
+
+.nibo{
+    position: absolute;
+    top: 400px;
+    right: 0;
+    width: 500px;
+    height: auto;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    top: 7%;
+    left: 2%;
+    position: absolute;
+  
+    
+}
+
+
+.card{
+    display: flex;
+    width: 500px;
+    height: 800px;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
