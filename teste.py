@@ -1,6 +1,10 @@
 import pyautogui
 import timeabrir youtube
 
+with open("style.css", "r") as f:
+   css = f.read()
+   markdown(f"<style>{css}</style>",unsafe.allow_html = True)
+
 
 
 comando = input("Assistente: Ola Igor, o que gostaria de fazer?").lower()
