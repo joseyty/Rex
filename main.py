@@ -6,23 +6,55 @@ while True:
    comando = input("Assistente: Ola Igor, o que gostaria de fazer?").lower()
    pyautogui.PAUSE = 0.5
 
-   if comando == "abrir o youtube":
-      comando = input("qual video você quer assistir?").lower()
+   if "youtube" in comando:
+      video = input("qual video você quer assistir?").lower()
       print("abrindo youtube...")
       #abrir o navegador
       pyautogui.press('win')
       pyautogui.write("chrome")
       pyautogui.press('enter')
 
-      time.sleep(3)
-
+      time.sleep(2)
       pyautogui.hotkey("ctrl","l")
+      time.sleep(0.5)
       pyautogui.write("https://www.youtube.com")
       pyautogui.press('enter')
 
+      time.sleep(4)
+      
+      pyautogui.press('tab')
+      time.sleep(1)
+      pyautogui.press('tab')
+      time.sleep(1)
+      pyautogui.press('tab')
+      time.sleep(1)
+      pyautogui.press('tab')
+      time.sleep(1)
+      pyautogui.press('tab')
+      time.sleep(3)
+      
+      pyautogui.press("enter")
+      time.sleep(1)
+     
+      pyautogui.write(video)
+      time.sleep(1)
+      pyautogui.press('enter')
 
-   elif comando == "abrir google":
-      comando = input("qual pesquisa você quer fazer?").lower()
+      time.sleep(3)
+      pyautogui.press('tab')
+      time.sleep(1)
+      pyautogui.press('enter')
+
+      print("Video iniciado com sucesso!,bom video!")
+
+      
+
+
+
+
+
+   elif "google" in comando:
+      pesquisa = input("qual pesquisa você quer fazer?").lower()
       print("abrindo google...")
       pyautogui.PAUSE = 0.5
       pyautogui.press('win')
@@ -36,13 +68,13 @@ while True:
       pyautogui.press('enter')
 
 
-   elif comando == "abra o vscode":
+   elif "vscode" in comando:
       pyautogui.PAUSE = 0.5
       pyautogui.press('win')
       pyautogui.write("vscode")
       pyautogui.press('enter')
 
-   elif comando == "abra o spotify":
+   elif "spotify" in comando:
       musica = input("qual musica você quer ouvir?").lower()
       print("abrindo spotify...")
       pyautogui.PAUSE = 0.5
@@ -73,5 +105,9 @@ while True:
         
       print("Música iniciada com sucesso!")
 
+   elif "sair" in comando:
+      print("Saindo do assistente...")
+      break
+
    else:
-      print("Comando não reconhecido. Por favor, tente novamente.")   
+      print("Comando não reconhecido. Por favor, tente novamente.")
