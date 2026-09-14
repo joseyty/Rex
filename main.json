@@ -1,0 +1,23 @@
+[
+    {
+        "nome": "Rex",
+        "idade": 1,
+        "linguagem": "Python",
+        "versao": 3.11,
+        "criador": "Igor Melo"
+    },
+    {
+        "nome": "Igor Melo",
+        "idade": 17,
+        "linguagem": "Python",
+        "versao": 3.11,
+        "criador": "Igor Melo"
+    },
+    {
+        "nome": "igor",
+        "idade": 21,
+        "linguagem": "python",
+        "versao": 3.11,
+        "criador": "Igor Melo"
+    }
+]
