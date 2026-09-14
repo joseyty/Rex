@@ -1,7 +1,7 @@
 [
     {
-        "nome": "Rex",
-        "idade": 1,
+        "nome": "melo",
+        "idade": "23",
         "linguagem": "Python",
         "versao": 3.11,
         "criador": "Igor Melo"
@@ -14,9 +14,9 @@
         "criador": "Igor Melo"
     },
     {
-        "nome": "igor",
-        "idade": 21,
-        "linguagem": "python",
+        "nome": "jose",
+        "idade": 31,
+        "linguagem": "php",
         "versao": 3.11,
         "criador": "Igor Melo"
     }
