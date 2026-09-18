@@ -112,26 +112,25 @@ while True:
 
 
    elif "fortnite" in comando:
-        pyautogui.PAUSE(5)
-        pyautogui.press("win")
-        pyautogui.write("epic games")
-        time.sleep(2)
-        pyautogui.press(enter)
-        time.sleep(5)
-        
-       
-                # Pressiona Tab 40 vezes com um pequeno intervalo
-        for _ in range(40):
-                    pyautogui.press('tab')
-                    time.sleep(0.1)
-                
-                # Pressiona Enter no final da navegação
-                pyautogui.press("enter")
-                
-            except Exception as e:
-                print("Erro ao abrir a Epic Games:", e)
-        else:
-            print("ate mais tarde.")
+      try:
+         pyautogui.PAUSE = 5
+         pyautogui.press("win")
+         pyautogui.write("epic games")
+         time.sleep(2)
+         pyautogui.press("enter")
+         time.sleep(5)
+
+         # Pressiona Tab 40 vezes com um pequeno intervalo
+         for _ in range(40):
+             pyautogui.press('tab')
+             time.sleep(0.1)
+
+         # Pressiona Enter no final da navegação
+         pyautogui.press("enter")
+      except Exception as e:
+         print("Erro ao abrir a Epic Games:", e)
+      else:
+         print("ate mais tarde.")
 
    else:
       print("Comando não reconhecido. Por favor, tente novamente.")
